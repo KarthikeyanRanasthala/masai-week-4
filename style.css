@@ -1,0 +1,96 @@
+body {
+    margin: 10px 30px;
+    background: linear-gradient(to left, #C4E0E5, #4CA1AF);
+    font-family: 'Lobster', cursive;
+
+}
+
+input {
+    text-align: center;
+}
+
+#top {
+    display: grid;
+    grid-template: auto / 85% 15%; 
+}
+
+#top div:first-child {
+    text-align: left;
+    font-size: 35px;
+    grid-area: span 2 / span 1;
+}
+
+#top div {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#add-data {
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
+    margin: 10px 0px;
+    justify-items: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#add-data select {
+    border-radius: 10px;
+    padding: 0px 10px; 
+}
+
+#add-marks {
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+    border: 1px solid black;
+}
+
+#add-marks div {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+#add-marks p {
+    margin: 0px;
+}
+
+#add-button {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.main-records {
+    display: grid;
+    grid-template: auto / repeat(6, 1fr);
+    justify-items: center;
+}
+.main-records div {
+    margin: 5px 0px;
+}
+
+.marks-div {
+    display: grid;
+    grid-template: repeat(6, auto) / repeat(2, 60px);
+}
+
+.marks-div:nth-child(odd) {
+    justify-items: left;
+}
+.marks-div:nth-child(even) {
+    justify-items: right;
+}
+
+#students-record-top {
+    display: flex;
+    align-items: center;
+    flex-basis: 50px;
+}
+
+a {
+    padding: 0px 10px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
